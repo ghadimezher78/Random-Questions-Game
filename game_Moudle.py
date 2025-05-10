@@ -6,7 +6,7 @@ def Question1(root):
         Failed = tk.Label(root, text="You Haved Guessed The Wrong Answer!", font=("Arial", 10))
         Failed.pack()
     # The Question Label
-    QuestionLabel = tk.Label(root, text="What Was Lebron James Born?", font=("Arial", 10))
+    QuestionLabel = tk.Label(root, text="When Was Lebron James Born?", font=("Arial", 10))
     QuestionLabel.pack(padx=10, pady=10)
     # The Button Questions
     ButtonQuestion1_1 = tk.Button(root, text="February 20, 1991", font=("Arial", 10), command=failed)
