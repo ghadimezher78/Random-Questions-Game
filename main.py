@@ -10,5 +10,5 @@ def menu():
     PlayButton.pack()
     root.geometry("400x500")
     root.mainloop()
-
-menu()
+if __name__ == "__main__":
+    menu()
