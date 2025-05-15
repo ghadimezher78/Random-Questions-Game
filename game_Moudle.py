@@ -41,12 +41,28 @@ def Question3(root):
     QuestionLabel = tk.Label(root, text="What Is The First ChromeBook?", font=("Arial", 10))   
     QuestionLabel.pack(padx=10, pady=10) 
     # The Button Questions
-    ButtonQuestion3_1 = tk.Button(root, text="Cr-48", font=("Arial", 10), command=lambda: win(root))
+    ButtonQuestion3_1 = tk.Button(root, text="Cr-48", font=("Arial", 10), command=lambda: Question4(root))
     ButtonQuestion3_1.pack()
     ButtonQuestion3_2 = tk.Button(root, text="Pixel", font=("Arial", 10), command=failed)
     ButtonQuestion3_2.pack()
     ButtonQuestion3_3 = tk.Button(root, text="Pixelbook Go", font=("Arial", 10), command=failed)
     ButtonQuestion3_3.pack()
+
+def Question4(root):
+    #The Failed Function
+    def failed():
+        Failed = tk.Label(root, text="You Haved Guessed The Wrong Answer!", font=("Arial", 10))
+        Failed.pack()
+    # The Question Label
+    QuestionLabel = tk.Label(root, text="What Is 12 x 12 Equal To?", font=("Arial", 10))   
+    QuestionLabel.pack(padx=10, pady=10)    
+    # The Button Questions
+    ButtonQuestion4_1 = tk.Button(root, text="144", font=("Arial", 10), command=lambda: win(root))
+    ButtonQuestion4_1.pack()
+    ButtonQuestion4_2 = tk.Button(root, text="69", font=("Arial", 10), command=failed)
+    ButtonQuestion4_2.pack()
+    ButtonQuestion4_3 = tk.Button(root, text="1000", font=("Arial", 10), command=failed)
+    ButtonQuestion4_3.pack()
 
 def win(root):
     for widget in root.winfo_children():

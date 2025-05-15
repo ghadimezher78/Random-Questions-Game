@@ -8,7 +8,7 @@ def menu():
     WelcomeLabel.pack(padx=20, pady=20)
     PlayButton = tk.Button(root, text="Play", font=("Arial", 15), command=lambda: game.Question1(root))
     PlayButton.pack()
-    root.geometry("400x500")
+    root.geometry("600x900")
     root.mainloop()
 if __name__ == "__main__":
     menu()
