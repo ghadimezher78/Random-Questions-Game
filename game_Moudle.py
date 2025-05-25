@@ -3,7 +3,10 @@ import tkinter as tk
 def Question1(root, score=0):
     # The Failed Function
     def failed():
+        import main
         Failed = tk.Label(root, text="You Haved Guessed The Wrong Answer!", font=("Arial", 10))
+        TryAgainButton = tk.Button(root, text="Try Again", font=("Arial", 10), command=main.menu)
+        TryAgainButton.pack()
         Failed.pack()
     # The Question Label
     QuestionLabel = tk.Label(root, text="When Was Lebron James Born?", font=("Arial", 10))
@@ -19,7 +22,10 @@ def Question1(root, score=0):
 def Question2(root,score):
     # The Failed Function
     def failed():
+        import main
         Failed = tk.Label(root, text="You Haved Guessed The Wrong Answer!", font=("Arial", 10))
+        TryAgainButton = tk.Button(root, text="Try Again", font=("Arial", 10), command=main.menu)
+        TryAgainButton.pack()
         Failed.pack()
     # The Question Label    
     QuestionLabel = tk.Label(root, text="When was Python Made", font=("Arial", 10))
@@ -35,7 +41,10 @@ def Question2(root,score):
 def Question3(root,score):
     # The Failed Function
     def failed():
+        import main
         Failed = tk.Label(root, text="You Haved Guessed The Wrong Answer!", font=("Arial", 10))
+        TryAgainButton = tk.Button(root, text="Try Again", font=("Arial", 10), command=main.menu)
+        TryAgainButton.pack()
         Failed.pack()
     # The Question Label    
     QuestionLabel = tk.Label(root, text="What Is The First ChromeBook?", font=("Arial", 10))   
@@ -51,7 +60,10 @@ def Question3(root,score):
 def Question4(root, score):
     #The Failed Function
     def failed():
+        import main
         Failed = tk.Label(root, text="You Haved Guessed The Wrong Answer!", font=("Arial", 10))
+        TryAgainButton = tk.Button(root, text="Try Again", font=("Arial", 10), command=main.menu)
+        TryAgainButton.pack()
         Failed.pack()
     # The Question Label
     QuestionLabel = tk.Label(root, text="What Is 12 x 12 Equal To?", font=("Arial", 10))   
