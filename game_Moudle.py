@@ -5,8 +5,10 @@ def Question1(root, score=0):
     def failed():
         import main
         Failed = tk.Label(root, text="You Haved Guessed The Wrong Answer!", font=("Arial", 10))
+        ScoreLabel = tk.Label(root, text=f"Your Score Is {score}/4", font=("Arial", 10))
         TryAgainButton = tk.Button(root, text="Try Again", font=("Arial", 10), command=main.menu)
         TryAgainButton.pack()
+        ScoreLabel.pack()
         Failed.pack()
     # The Question Label
     QuestionLabel = tk.Label(root, text="When Was Lebron James Born?", font=("Arial", 10))
@@ -24,8 +26,10 @@ def Question2(root,score):
     def failed():
         import main
         Failed = tk.Label(root, text="You Haved Guessed The Wrong Answer!", font=("Arial", 10))
+        ScoreLabel = tk.Label(root, text=f"Your Score Is {score}/4", font=("Arial", 10))
         TryAgainButton = tk.Button(root, text="Try Again", font=("Arial", 10), command=main.menu)
         TryAgainButton.pack()
+        ScoreLabel.pack()
         Failed.pack()
     # The Question Label    
     QuestionLabel = tk.Label(root, text="When was Python Made", font=("Arial", 10))
@@ -43,8 +47,10 @@ def Question3(root,score):
     def failed():
         import main
         Failed = tk.Label(root, text="You Haved Guessed The Wrong Answer!", font=("Arial", 10))
+        ScoreLabel = tk.Label(root, text=f"Your Score Is {score}/4", font=("Arial", 10))
         TryAgainButton = tk.Button(root, text="Try Again", font=("Arial", 10), command=main.menu)
         TryAgainButton.pack()
+        ScoreLabel.pack()
         Failed.pack()
     # The Question Label    
     QuestionLabel = tk.Label(root, text="What Is The First ChromeBook?", font=("Arial", 10))   
@@ -62,8 +68,10 @@ def Question4(root, score):
     def failed():
         import main
         Failed = tk.Label(root, text="You Haved Guessed The Wrong Answer!", font=("Arial", 10))
+        ScoreLabel = tk.Label(root, text=f"Your Score Is {score}/4", font=("Arial", 10))
         TryAgainButton = tk.Button(root, text="Try Again", font=("Arial", 10), command=main.menu)
         TryAgainButton.pack()
+        ScoreLabel.pack()
         Failed.pack()
     # The Question Label
     QuestionLabel = tk.Label(root, text="What Is 12 x 12 Equal To?", font=("Arial", 10))   
